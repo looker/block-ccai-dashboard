@@ -116,6 +116,20 @@ view: aa_feedback {
     sql: ${TABLE}.loadTimestampUtc;;
   }
 
+  dimension_group: create_time_pst {
+    type: time
+    timeframes: [
+      raw,
+      date,
+      week,
+      month,
+      quarter,
+      year
+    ]
+    datatype: date
+    sql: EXTRACT(DATE FROM TIMESTAMP_SECONDS(${TABLE}.loadTimestampUtc) AT TIME ZONE "America/Los_Angeles");;
+  }
+
   dimension: month {
     type: number
     sql: ${TABLE}.month ;;
