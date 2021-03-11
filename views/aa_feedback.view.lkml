@@ -101,6 +101,7 @@ view: aa_feedback {
     sql: ${TABLE}.loadTimestampUtc ;;
   }
 
+  # Manually added for simpler time handling.
   dimension_group: create_time {
     type: time
     timeframes: [
@@ -237,7 +238,7 @@ view: aa_feedback__sentences {
     hidden: yes
     sql: ${TABLE}.annotations ;;
   }
-
+  # We don't have message id in orignal data so manually created one.
   dimension: id {
     type: string
     sql: CONCAT(${TABLE}.participantId, '_', ${TABLE}.createTimeNanos);;
