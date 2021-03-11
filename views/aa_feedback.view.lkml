@@ -101,21 +101,7 @@ view: aa_feedback {
     sql: ${TABLE}.loadTimestampUtc ;;
   }
 
-  # Manually added for simpler time handling.
-  dimension_group: create_time {
-    type: time
-    timeframes: [
-      raw,
-      date,
-      week,
-      month,
-      quarter,
-      year
-    ]
-    datatype: epoch
-    sql: ${TABLE}.loadTimestampUtc;;
-  }
-
+  # Create time in PST timezone
   dimension_group: create_time_pst {
     type: time
     timeframes: [
