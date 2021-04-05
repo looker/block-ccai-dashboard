@@ -100,6 +100,7 @@ view: aa_feedback {
     type: number
     sql: ${TABLE}.loadTimestampUtc ;;
   }
+
   dimension: start_timestamp_utc {
     type: number
     sql: ${TABLE}.startTimestampUtc ;;
@@ -117,7 +118,7 @@ view: aa_feedback {
       year
     ]
     datatype: date
-    sql: EXTRACT(DATE FROM TIMESTAMP_SECONDS(${TABLE}.start_timestamp_utc) AT TIME ZONE "America/Los_Angeles");;
+    sql: EXTRACT(DATE FROM TIMESTAMP_SECONDS(${TABLE}.startTimestampUtc) AT TIME ZONE "America/Los_Angeles");;
   }
 
   dimension: month {
