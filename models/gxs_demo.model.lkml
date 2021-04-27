@@ -35,6 +35,12 @@ explore: aa_feedback {
     relationship: one_to_many
   }
 
+  join: next_sentences {
+    view_label: "Aa Feedback: Next Sentence"
+    sql_on: ${aa_feedback__sentences.id} = ${next_sentences.id} ;;
+    relationship: one_to_one
+  }
+
   join: aa_feedback__sentences__annotations {
     view_label: "Aa Feedback: Sentences Annotations"
     sql: LEFT JOIN UNNEST(${aa_feedback__sentences.annotations}) as aa_feedback__sentences__annotations ;;
