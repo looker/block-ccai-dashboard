@@ -1,4 +1,4 @@
-view: sql_runner_query {
+view: next_sentences {
   derived_table: {
     sql: SELECT
         CONCAT(sentences.participantId, '_',sentences.createTimeNanos) as id,
