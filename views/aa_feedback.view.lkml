@@ -259,6 +259,11 @@ view: aa_feedback__sentences {
     sql: ${TABLE}.endOffsetNanos ;;
   }
 
+  dimension: is_covered_by_smart_reply_allowlist {
+    type: yesno
+    sql: ${TABLE}.isCoveredBySmartReplyAllowlist ;;
+  }
+
   dimension: intent_match_data {
     hidden: yes
     sql: ${TABLE}.intentMatchData ;;
