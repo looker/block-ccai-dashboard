@@ -3,7 +3,9 @@ view: next_sentences {
     sql: SELECT
         CONCAT(sentences.participantId, '_',sentences.createTimeNanos) as id,
         LEAD(sentences.participantRole)
-        OVER (PARTITION BY conversationName ORDER BY sentences.createTimeNanos) as next_participant_role
+        OVER (PARTITION BY conversationName ORDER BY sentences.createTimeNanos) as next_participant_role,
+        LEAD(sentences.sentence)
+        OVER (PARTITION BY conversationName ORDER BY sentences.createTimeNanos) as next_sentence_text,
       FROM aa_feedback, UNNEST(sentences) as sentences
        ;;
   }
@@ -24,7 +26,12 @@ view: next_sentences {
     sql: ${TABLE}.next_participant_role ;;
   }
 
+  dimension: next_sentence_text {
+    type: string
+    sql:  ${TABLE}.next_sentence_text;;
+  }
+
   set: detail {
-    fields: [id, next_participant_role]
+    fields: [id, next_participant_role, next_sentence_text]
   }
 }
