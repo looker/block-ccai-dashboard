@@ -11,6 +11,6 @@ constant: DATASET {
 }
 
 constant: TABLE_NAME {
-  value: "Table NAme"
+  value: "Table Name"
   export: override_optional
 }
