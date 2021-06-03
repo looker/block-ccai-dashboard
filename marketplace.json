@@ -1,0 +1,23 @@
+{
+  "label": "CCAI Agent Assist Metrics",
+  "category_label": "Models",
+  "branding": {
+    "image_uri": "",
+    "tagline": "CCAI Agent Assist Metrics Dashboard."
+  },
+
+  "constants": {
+    "CONNECTION": {
+      "label": "Connection Name",
+      "value_constraint": "connection"
+    },
+    "DATASET": { "label": "Dataset Name" },
+    "TABLE_NAME": { "label": "Table Name" }
+  },
+  "models": [
+    {
+      "name": "gc_ccai",
+      "connection_constant": "CONNECTION"
+    }
+  ]
+}
