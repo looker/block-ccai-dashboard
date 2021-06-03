@@ -2,7 +2,7 @@
   "label": "CCAI Agent Assist Metrics",
   "category_label": "Models",
   "branding": {
-    "image_uri": "",
+    "image_uri": "https://marketplace-api.looker.com/block-icons/ccai_icon.png",
     "tagline": "CCAI Agent Assist Metrics Dashboard."
   },
 
