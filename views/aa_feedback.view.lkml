@@ -1,5 +1,6 @@
 view: aa_feedback {
-  sql_table_name: `ccai_looker_bq.aa_feedback`;;
+  # sql_table_name: `ccai_looker_bq.aa_feedback`;;
+  sql_table_name: `@{DATASET}.@{TABLENAME}`;;
 
   dimension_group: _partitiondate {
     type: time
