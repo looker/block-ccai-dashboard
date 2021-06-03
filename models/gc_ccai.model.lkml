@@ -1,14 +1,14 @@
-connection: "gsx_demo_bq"
+connection: "@{CONNECTION}"
 
 # include all the views
 include: "/views/**/*.view"
 
-datagroup: gxs_demo_default_datagroup {
+datagroup: gc_ccai_default_datagroup {
   # sql_trigger: SELECT MAX(id) FROM etl_log;;
   max_cache_age: "1 hour"
 }
 
-persist_with: gxs_demo_default_datagroup
+persist_with: gc_ccai_default_datagroup
 
 explore: aa_feedback {
   join: aa_feedback__words {

@@ -6,7 +6,7 @@ view: next_sentences {
         OVER (PARTITION BY conversationName ORDER BY sentences.createTimeNanos) as next_participant_role,
         LEAD(sentences.sentence)
         OVER (PARTITION BY conversationName ORDER BY sentences.createTimeNanos) as next_sentence_text,
-      FROM aa_feedback, UNNEST(sentences) as sentences
+      FROM @{TABLE_NAME}, UNNEST(sentences) as sentences
        ;;
   }
 
