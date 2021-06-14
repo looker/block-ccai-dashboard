@@ -2,6 +2,8 @@ connection: "@{CONNECTION}"
 
 # include all the views
 include: "/views/**/*.view"
+# include all the dashboards
+include: "../*.dashboard"
 
 datagroup: gc_ccai_default_datagroup {
   # sql_trigger: SELECT MAX(id) FROM etl_log;;
@@ -11,6 +13,7 @@ datagroup: gc_ccai_default_datagroup {
 persist_with: gc_ccai_default_datagroup
 
 explore: aa_feedback {
+  label: "Agent Assist Feedback"
   join: aa_feedback__words {
     view_label: "Aa Feedback: Words"
     sql: LEFT JOIN UNNEST(${aa_feedback.words}) as aa_feedback__words ;;
