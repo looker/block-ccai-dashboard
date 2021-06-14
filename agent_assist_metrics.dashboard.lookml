@@ -5,7 +5,7 @@
   elements:
   - title: Assist Rate
     name: Assist Rate
-    model: gxs_demo
+    model: gc_ccai
     explore: aa_feedback
     type: single_value
     fields: [conversation_sr_clicked, conversation_count]
@@ -101,7 +101,7 @@
     height: 3
   - title: Smart Reply Effective CTR Trend
     name: Smart Reply Effective CTR Trend
-    model: gxs_demo
+    model: gc_ccai
     explore: aa_feedback
     type: looker_line
     fields: [aa_feedback.create_time_pst_date, message_sr_clicked_effective_count,
@@ -182,7 +182,7 @@
     height: 4
   - title: Effective CTR
     name: Effective CTR
-    model: gxs_demo
+    model: gc_ccai
     explore: aa_feedback
     type: single_value
     fields: [message_sr_effective_count, message_sr_clicked_effective_count]
@@ -266,7 +266,7 @@
     height: 4
   - title: Message Allowlist Coverage
     name: Message Allowlist Coverage
-    model: gxs_demo
+    model: gc_ccai
     explore: aa_feedback
     type: single_value
     fields: [message_covered_sr_allowlist_count, message_count]
@@ -380,7 +380,7 @@
     height: 3
   - title: Ruogu Explore
     name: Ruogu Explore
-    model: gxs_demo
+    model: gc_ccai
     explore: aa_feedback
     type: single_value
     fields: [conversation_as_clicked, conversation_count]
@@ -476,7 +476,7 @@
     height: 4
   - title: Ruogu Explore
     name: Ruogu Explore (2)
-    model: gxs_demo
+    model: gc_ccai
     explore: aa_feedback
     type: single_value
     fields: [message_as_clicked_count, message_as_count]
@@ -632,7 +632,7 @@
     height: 4
   - title: Ruogu Explore
     name: Ruogu Explore (3)
-    model: gxs_demo
+    model: gc_ccai
     explore: aa_feedback
     type: single_value
     fields: [message_as_positive_count, message_as_count]
@@ -731,7 +731,7 @@
     height: 4
   - title: Ruogu Explore
     name: Ruogu Explore (4)
-    model: gxs_demo
+    model: gc_ccai
     explore: aa_feedback
     type: single_value
     fields: [message_as_count, message_as_negative_count]
@@ -828,7 +828,7 @@
     height: 4
   - title: Ruogu Explore
     name: Ruogu Explore (5)
-    model: gxs_demo
+    model: gc_ccai
     explore: aa_feedback
     type: single_value
     fields: [conversation_sc_clicked, conversation_count]
@@ -924,7 +924,7 @@
     height: 4
   - title: Ruogu Explore
     name: Ruogu Explore (6)
-    model: gxs_demo
+    model: gc_ccai
     explore: aa_feedback
     type: single_value
     fields: [message_sc_displayed, message_sc]
@@ -1021,7 +1021,7 @@
     height: 4
   - title: Ruogu Explore
     name: Ruogu Explore (7)
-    model: gxs_demo
+    model: gc_ccai
     explore: aa_feedback
     type: single_value
     fields: [message_sc, message_sc_clicked]
@@ -1114,7 +1114,7 @@
     height: 4
   - title: Smart Compose Acceptance Rate Trend
     name: Smart Compose Acceptance Rate Trend
-    model: gxs_demo
+    model: gc_ccai
     explore: aa_feedback
     type: looker_line
     fields: [message_sc, message_sc_clicked, aa_feedback.create_time_pst_date]
@@ -1206,7 +1206,7 @@
     height: 4
   - title: Smart Reply Assist Rate Trend
     name: Smart Reply Assist Rate Trend
-    model: gxs_demo
+    model: gc_ccai
     explore: aa_feedback
     type: looker_line
     fields: [conversation_sr_clicked, conversation_count, aa_feedback.create_time_pst_date]
@@ -1285,7 +1285,7 @@
     height: 4
   - title: Smart Compose Assist Rate Trend
     name: Smart Compose Assist Rate Trend
-    model: gxs_demo
+    model: gc_ccai
     explore: aa_feedback
     type: looker_line
     fields: [conversation_sc_clicked, conversation_count, aa_feedback.create_time_pst_date]
@@ -1376,7 +1376,7 @@
     height: 4
   - title: Article Suggestion Assist Rate Trend
     name: Article Suggestion Assist Rate Trend
-    model: gxs_demo
+    model: gc_ccai
     explore: aa_feedback
     type: looker_line
     fields: [conversation_as_clicked, conversation_count, aa_feedback.create_time_pst_date]
@@ -1466,7 +1466,7 @@
     height: 4
   - title: Article Suggestion Click Through Rate Trend
     name: Article Suggestion Click Through Rate Trend
-    model: gxs_demo
+    model: gc_ccai
     explore: aa_feedback
     type: looker_line
     fields: [message_as_clicked_count, message_as_count, aa_feedback.create_time_pst_date]
@@ -1556,7 +1556,7 @@
     height: 4
   - title: Untitled
     name: Untitled
-    model: gxs_demo
+    model: gc_ccai
     explore: aa_feedback
     type: single_value
     fields: [conversation_count]
@@ -1585,7 +1585,7 @@
     height: 4
   - title: Untitled
     name: Untitled (2)
-    model: gxs_demo
+    model: gc_ccai
     explore: aa_feedback
     type: single_value
     fields: [conversation_count, conversation_clicked_count]
@@ -1625,7 +1625,7 @@
     height: 4
   - title: Untitled
     name: Untitled (3)
-    model: gxs_demo
+    model: gc_ccai
     explore: aa_feedback
     type: single_value
     fields: [client_sentiment_score]
@@ -1654,7 +1654,7 @@
     height: 4
   - title: Smart Reply Exact Match Rate
     name: Smart Reply Exact Match Rate
-    model: gxs_demo
+    model: gc_ccai
     explore: aa_feedback
     type: looker_line
     fields: [aa_feedback.create_time_pst_date, message_sr_exact_match_count, message_sr_count]
@@ -1754,7 +1754,7 @@
       type: relative_timeframes
       display: inline
       options: []
-    model: gxs_demo
+    model: gc_ccai
     explore: aa_feedback
     listens_to_filters: []
     field: aa_feedback.create_time_pst_date
