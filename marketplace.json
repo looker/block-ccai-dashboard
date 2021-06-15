@@ -1,9 +1,9 @@
 {
-  "label": "Contact Center AI: Agent Assist",
+  "label": "Conversational AI: Agent Assist",
   "category_label": "Models",
   "branding": {
     "image_uri": "https://marketplace-api.looker.com/block-icons/ccai_icon.png",
-    "tagline": "Contact Center AI Agent Assist Metrics Dashboard."
+    "tagline": "Conversational AI Agent Assist Metrics Dashboard."
   },
 
   "constants": {
@@ -11,8 +11,14 @@
       "label": "Connection Name",
       "value_constraint": "connection"
     },
-    "DATASET": { "label": "Dataset Name" },
-    "TABLE_NAME": { "label": "Table Name" }
+    "DATASET": {
+      "label": "Dataset Name",
+      "description": "The exported Big Query dataset from Insights"
+    },
+    "TABLE_NAME": {
+      "label": "Table Name",
+      "description": "The exported Big Query table from Insights"
+    }
   },
   "models": [
     {
