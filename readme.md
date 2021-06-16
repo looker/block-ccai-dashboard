@@ -1,6 +1,6 @@
-# Google Cloud Conversational AI - Agent Assist Metrics Dashboard
+# Google Cloud Contact Center AI - Agent Assist Metrics Dashboard
 
-This Looker Block can be applied on the BigQuery instance exported from Google Cloud Conversational AI - Insights.
+This Looker Block can be applied on the BigQuery instance exported from Google Cloud Contact Center AI - Insights.
 
 1. Please follow the [instruction](https://cloud.google.com/dialogflow/priv/docs/insights/quickstarts/quickstart-enable-dialogflow-runtime-integration) to enable intergration with Insights first.
 2. Please follow the [instruction](https://cloud.google.com/dialogflow/priv/docs/insights/quickstarts/quickstart-export) to export online traffic to your BigQuery instance.

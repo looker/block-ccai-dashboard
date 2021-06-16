@@ -1,4 +1,5 @@
 connection: "@{CONNECTION}"
+label: "Contact Center AI"
 
 # include all the views
 include: "/views/**/*.view"
@@ -6,7 +7,6 @@ include: "/views/**/*.view"
 include: "../*.dashboard"
 
 datagroup: gc_ccai_default_datagroup {
-  # sql_trigger: SELECT MAX(id) FROM etl_log;;
   max_cache_age: "1 hour"
 }
 

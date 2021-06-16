@@ -1,9 +1,9 @@
 {
-  "label": "Conversational AI: Agent Assist",
+  "label": "Contact Center AI: Agent Assist",
   "category_label": "Models",
   "branding": {
     "image_uri": "https://marketplace-api.looker.com/block-icons/ccai_icon.png",
-    "tagline": "Conversational AI Agent Assist Metrics Dashboard."
+    "tagline": "Contact Center AI Agent Assist Metrics Dashboard."
   },
 
   "constants": {
